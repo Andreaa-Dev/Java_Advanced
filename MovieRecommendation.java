@@ -47,6 +47,7 @@ public class MovieRecommendation{
     private static double calculateSimilarity(Set<String> genres1, Set<String> genres2) {
         // Calculate cosine similarity between two sets of genres
         Set<String> intersection = new HashSet<>(genres1);
+        // retain: only keep the item same has both genres1 and 2
         intersection.retainAll(genres2);
 
         double dotProduct = intersection.size();

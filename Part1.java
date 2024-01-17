@@ -1,7 +1,10 @@
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
+import java.util.TreeMap;
 
 public class Part1 {
 public static void main(String[] args) {
@@ -27,6 +30,19 @@ public static void main(String[] args) {
     hashMap.put(1,"one");
     hashMap.put(2, "two");
     System.out.println(hashMap.get(2));
+
+    // Tree map
+    TreeMap<Integer,String> map= new TreeMap<>();
+    map.put(1,"new value");
+
+    // array list
+    ArrayList<Integer> arrayList = new ArrayList<>();
+    arrayList.add(1);
+
+    // set
+    HashSet<Integer> set = new HashSet<>();
+    set.add(1);
+
 }
     
 }
